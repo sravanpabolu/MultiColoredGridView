@@ -11,11 +11,13 @@ import UIKit
 
 class CollectionViewController: UICollectionViewController {
     let reuseIdentifier = "Cell"
-    var rows = 15
-    var column = 8
+    static var rowCount = Int()
+    static var columnCount = Int()
     let sectionInsets = UIEdgeInsets(top: 10.0, left: 10.0, bottom: 0.0, right: 10.0)
+    
+    var rows = rowCount
+    var column = columnCount
 }
-
 
 //MARK: Data source
 extension CollectionViewController {

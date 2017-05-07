@@ -40,13 +40,8 @@ class ViewController: UIViewController {
         if validationSuccess == true {
 //            drawGrid(rows: rows, Column: col)
             
-            let collectionObj: CollectionViewController = CollectionViewController()
-            collectionObj.rows = rows
-            collectionObj.column = col
-            
-            let secondViewController = self.storyboard?.instantiateViewController(withIdentifier: "CollectionViewController") as! CollectionViewController
-            self.navigationController?.pushViewController(secondViewController, animated: true)
-
+            CollectionViewController.rowCount = rows
+            CollectionViewController.columnCount = col
         }
     }
     

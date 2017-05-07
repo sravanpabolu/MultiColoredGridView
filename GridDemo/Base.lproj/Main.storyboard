@@ -41,6 +41,7 @@
                                 <state key="normal" title="Submit"/>
                                 <connections>
                                     <action selector="btnSubmitTappedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8hb-Fo-BGD"/>
+                                    <segue destination="4z0-lc-PkJ" kind="show" id="2jk-lA-2Pa"/>
                                 </connections>
                             </button>
                         </subviews>
